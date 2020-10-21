@@ -1,0 +1,21 @@
+#header{
+    background: url("img/melon-2464875_1920.jpg") left center;
+    background-size: cover;
+    
+    height: 50vh; 
+    font-weight: 500;
+    }
+#header h1 {
+        color: white;
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.8),
+        0px 8px 13px rgba(0,0,0,0.4),
+        0px 18px 23px rgba(0,0,0,0.4);
+} 
+
+.with-bg-size {
+    background-image: url('img/watermelon-1838547_1920.jpg');
+    height: 300px;
+    background-position: center;
+    /* Make the background image cover the area of the <div>, and clip the excess */
+    background-size: cover;
+  }
