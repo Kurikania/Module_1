@@ -1,7 +1,6 @@
 #header{
     background: url("img/melon-2464875_1920.jpg") left center;
     background-size: cover;
-    
     height: 50vh; 
     font-weight: 500;
     }
@@ -18,4 +17,10 @@
     background-position: center;
     /* Make the background image cover the area of the <div>, and clip the excess */
     background-size: cover;
+  } 
+
+  @media (max-width: 576px) {
+    #header  h1 {
+        font-size: 3em;
+    }
   }
