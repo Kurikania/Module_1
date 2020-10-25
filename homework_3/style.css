@@ -119,6 +119,8 @@ img {
   align-self: flex-end;
   justify-self: right;
   height: 200px;
+  filter: grayscale(1);
+  opacity: 0.5;
 }
 .author {
  font-style: italic;
