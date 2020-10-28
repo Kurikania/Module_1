@@ -1,0 +1,78 @@
+
+
+.body{
+    background-color: honeydew;
+}
+
+a {
+    color: black;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    padding: 0;
+}
+
+.responsiveImage, p {
+    box-sizing: border-box;
+    width: 100%;
+    height: 33vh;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 15px;
+    margin: 0;
+    box-shadow:  0px 3px 3px rgba(0,0,0,0.2);
+}
+
+.col-12 p {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 4vh;
+}
+.col-12  span {
+    font-weight: bold;
+    font-size: 5vh;
+}
+
+
+.minislide {
+    overflow:hidden; 
+    box-sizing: border-box;
+
+}
+.minislide li { 
+    box-sizing: border-box;
+    position:absolute; 
+    animation:minislide 10s infinite; 
+    opacity:0; 
+    width: 100%; 
+    height: auto;
+    margin-top: 2px;
+}
+
+
+@keyframes minislide {
+    0% {
+        opacity:0;
+    } 
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.minislide li:nth-child(1){
+    animation-delay:0s;
+}
+.minislide li:nth-child(2){
+    animation-delay:5s;
+}
+
+
