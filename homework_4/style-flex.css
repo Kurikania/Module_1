@@ -53,13 +53,14 @@ section {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     font-size: 4vh;
+    height: fit-content;
 }
 .col-12  span {
     font-weight: bold;
     font-size: 5vh;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
     .row {
         flex-direction: column;
     }
