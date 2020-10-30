@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 5</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<!-- <body>
+    ##### Занятие 5
+    1. CSS flexbox
+    ##### Домашнее задание:
+    1. Сверстать выпадающее меню.
+    2. Сверстать модальное окно. -->
+    <div class="content">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li> Our Projects
+                        <ul class="sub">
+                            <li><a href="https://frosty-knuth-a7e0e9.netlify.app">Color Game</a></li>
+                            <li><a href="https://focused-ride-c86562.netlify.app/">Guess password</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="left sidebar">
+            </div>
+            <div class="center">
+
+                <h1>
+                    Get your Advice
+                </h1>
+
+                <div>
+                    <div class = "answer">
+                           <span id = "answerRandom" >Here goes your advice</span> 
+                    </div>
+                    <button id="getRandom">
+                        Get A Random Advice
+                    </button>
+                </div>
+                <hr>
+                <div>
+                    <h2>Do you need something more specific? </h2>
+                    <div id="form" class="form">
+                    </div>
+
+                    <div class="form-open">
+                        <div style="display: flex; justify-content: space-between;"> 
+                        <h2>Okay, type some keyword </h2>
+                        <a href="#"><button>Close</button></a>   
+                        </div> 
+                        <div> 
+                        <form id = "getSpecific"  >
+                            <input type="text" name="query">
+                            <button id="getBtnSpecific">Get Advice</button>
+                        </form>
+                        <div class = "answer"> <span id="answerSpecific">Here goes your advice</span> </div>  
+                        </div>                                       
+                    </div>                
+                        <a href="#form">
+                            <button id="openForm">Yes!</button>
+                        </a>    
+                </div>   
+            </div>
+            <div class="right sidebar">
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
