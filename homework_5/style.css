@@ -105,6 +105,13 @@ html {
     order: 3;
     flex: 1;
   }
+  @media screen and (min-width: 576px) {
+    nav li , nav a {
+      padding: 10px 30px;
+      font-weight: 400;
+  }
+
+  }
 
   @media screen and (max-width: 575px) {
     main {
@@ -122,17 +129,18 @@ html {
     }
     nav li , nav a {
       display: flex;
-      padding: 10px 10px;
+      padding: 10px 20px;
     }
     .center {
       padding-bottom: 0px;
     }
     nav {
+      max-width: 70%; 
       padding: 0 30px; 
     } 
+
     nav a, nav li, li:hover > .sub, li > .sub ,  a > .sub {      
       font-size: 14px;
-      padding: 0;
       text-align: center;
     }  
     .sub {
@@ -164,10 +172,7 @@ html {
     justify-content: center;
   }
 
-  nav li , nav a {
-      padding: 10px 30px;
-      font-weight: 400;
-  }
+
 
   nav li:hover , nav a:hover {
         background-color: #8c7d70;
