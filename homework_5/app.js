@@ -13,5 +13,9 @@ getSpecific.addEventListener('submit', async (e) => {
     e.preventDefault();
     const searchTerm = getSpecific.elements.query.value;
     const res = await axios.get(`https://api.adviceslip.com/advice/search/` + searchTerm );
-    answerSpecific.innerText = res.data.slips[0].advice; 
+    if (!res.data.slips) {
+        answerSpecific.innerText = "Try another keyword"; 
+    } else if(res.data.slips[0].advice) {
+        answerSpecific.innerText = res.data.slips[0].advice; 
+    }    
 })
