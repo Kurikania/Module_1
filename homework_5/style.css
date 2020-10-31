@@ -113,7 +113,7 @@ html {
 
   }
 
-  @media screen and (max-width: 575px) {
+  @media  (max-width: 575px) {
     main {
       flex-direction: column;
     }
@@ -135,24 +135,29 @@ html {
       padding-bottom: 0px;
     }
     nav {
-      max-width: 70%; 
       padding: 0 30px; 
     } 
+    nav ul {
+      display: flex; 
+      align-items: center;
+    } 
 
-    nav a, nav li, li:hover > .sub, li > .sub ,  a > .sub {      
+    nav a, nav li, li:hover > .sub, li > .sub {      
       font-size: 14px;
       text-align: center;
+      padding: 10px 10px;
     }  
     .sub {
       margin-top: 50px;
     }
 
     .sub li {
-      text-align: center;
-      padding: 10px 10px;
+      padding: 0;
     }
+
+
     .sub li:nth-child(1) {
-      margin-top: 30px;
+      margin-top: 5px;
     }
 
     .form-open input {
@@ -173,7 +178,6 @@ html {
   }
 
 
-
   nav li:hover , nav a:hover {
         background-color: #8c7d70;
         color: white;
@@ -183,15 +187,17 @@ html {
       display: none;
   }
 
-  .sub li {
+  .sub li  {
     background-color: rgba(0,0,0,0.1) ;
+    padding: 10px 20px 10px 0;
+    
   }
 
   li:hover > .sub {
     margin-top: 10px;
     display: block; 
     position: fixed;
-    margin-left: -50px;
+    margin-left: -20px;
 }
 
   /*footer styles*/
